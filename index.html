@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser Use — The browser, made for AI agents</title>
+  <meta name="description" content="Berikan ejen AI anda akses web yang pantas, boleh dipercayai dan selamat." />
+
+  <!-- Preconnect to font host if self-hosting Geist later; using system fallback stack for zero-dependency v1 -->
+  <link rel="preload" href="assets/tokens.json" as="fetch" type="application/json" crossorigin="anonymous" />
+  <link rel="preload" href="assets/data.json" as="fetch" type="application/json" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Langkau ke kandungan</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" id="logo" href="/" aria-label="Laman utama Browser Use"></a>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Togol menu navigasi"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Utama">
+        <ul class="primary-nav__list" id="primary-nav-list"></ul>
+      </nav>
+
+      <div class="site-header__actions" id="site-header-actions"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow" id="hero-eyebrow"></p>
+        <h1 class="hero__headline" id="hero-heading"></h1>
+        <p class="hero__sub" id="hero-sub"></p>
+        <div class="hero__actions" id="hero-actions"></div>
+        <dl class="hero__stats" id="hero-stats"></dl>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features" id="product" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-head__title" id="features-heading"></h2>
+          <p class="section-head__sub" id="features-sub"></p>
+        </header>
+        <ul class="features__grid" id="features-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ USE CASES ============ -->
+    <section class="use-cases" id="use-cases" aria-labelledby="use-cases-heading">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-head__title" id="use-cases-heading"></h2>
+          <p class="section-head__sub" id="use-cases-sub"></p>
+        </header>
+        <ul class="use-cases__grid" id="use-cases-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ DOCS ============ -->
+    <section class="docs" id="docs" aria-labelledby="docs-heading">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-head__title" id="docs-heading"></h2>
+          <p class="section-head__sub" id="docs-sub"></p>
+        </header>
+        <ul class="docs__grid" id="docs-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-head__title" id="pricing-heading"></h2>
+          <p class="section-head__sub" id="pricing-sub"></p>
+        </header>
+        <ul class="pricing__grid" id="pricing-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 class="section-head__title" id="testimonials-heading"></h2>
+        <ul class="testimonials__grid" id="testimonials-grid"></ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 class="section-head__title" id="faq-heading"></h2>
+        <div class="faq__list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container newsletter__inner">
+        <div class="newsletter__copy">
+          <h2 class="newsletter__heading" id="newsletter-heading"></h2>
+          <p class="newsletter__sub" id="newsletter-sub"></p>
+        </div>
+        <form class="newsletter__form" id="newsletter-form" novalidate>
+          <div class="newsletter__field">
+            <label class="sr-only" for="newsletter-email">Alamat emel</label>
+            <input
+              class="newsletter__input"
+              id="newsletter-email"
+              type="email"
+              autocomplete="email"
+              required
+              aria-describedby="newsletter-status"
+            />
+            <button class="btn btn--primary" id="newsletter-submit" type="submit"></button>
+          </div>
+          <p class="newsletter__status" id="newsletter-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta" id="cta" aria-labelledby="cta-heading">
+      <div class="container cta__inner">
+        <h2 class="cta__heading" id="cta-heading"></h2>
+        <p class="cta__sub" id="cta-sub"></p>
+        <div class="cta__actions" id="cta-actions"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="site-footer__grid" id="site-footer-grid"></div>
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright" id="site-footer-copyright"></p>
+        <ul class="site-footer__social" id="site-footer-social"></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
