@@ -4,8 +4,8 @@
     "purpose": "Single source of truth untuk SEMUA konten teks/struktur website. Fail ini di-fetch oleh /js/data-loader.js dan di-render ke DOM oleh /js/ui-manager.js. JANGAN hardcode teks dalam index.html kecuali skeleton/landmark elements.",
     "site": {
       "name": "Browser Use",
-      "tagline": "Jadikan laman web boleh diakses untuk ejen AI",
-      "lang": "ms",
+      "tagline": "Make websites accessible for AI agents",
+      "lang": "en",
       "url": "https://example.github.io/browser-use-clone/"
     }
   },
@@ -13,263 +13,263 @@
   "nav": {
     "logo": { "text": "Browser Use", "href": "/" },
     "links": [
-      { "id": "nav-product", "label": "Produk", "href": "#product" },
-      { "id": "nav-docs", "label": "Dokumen", "href": "#docs" },
-      { "id": "nav-pricing", "label": "Harga", "href": "#pricing" },
-      { "id": "nav-usecases", "label": "Kes Penggunaan", "href": "#use-cases" },
-      { "id": "nav-faq", "label": "Soalan Lazim", "href": "#faq" }
+      { "id": "nav-product", "label": "Product", "href": "#product" },
+      { "id": "nav-docs", "label": "Docs", "href": "#docs" },
+      { "id": "nav-pricing", "label": "Pricing", "href": "#pricing" },
+      { "id": "nav-usecases", "label": "Use Cases", "href": "#use-cases" },
+      { "id": "nav-faq", "label": "FAQ", "href": "#faq" }
     ],
-    "cta": { "id": "nav-cta", "label": "Mulakan", "href": "#cta", "variant": "primary" },
+    "cta": { "id": "nav-cta", "label": "Get Started", "href": "#cta", "variant": "primary" },
     "secondaryCta": { "id": "nav-github", "label": "GitHub", "href": "https://github.com/", "variant": "ghost" }
   },
 
   "hero": {
-    "eyebrow": "Sumber terbuka · Automasi pelayar",
-    "headline": "Pelayar, dibuat untuk ejen AI",
-    "subheadline": "Berikan ejen AI anda akses web yang pantas, boleh dipercayai dan selamat. Dibina untuk pembangun yang menghantar.",
-    "primaryCta": { "id": "hero-cta-primary", "label": "Mulakan", "href": "#cta" },
-    "secondaryCta": { "id": "hero-cta-secondary", "label": "Lihat di GitHub", "href": "https://github.com/" },
+    "eyebrow": "Open source · Browser automation",
+    "headline": "The browser, made for AI agents",
+    "subheadline": "Give your AI agent reliable, fast, and secure access to the web. Built for developers who ship.",
+    "primaryCta": { "id": "hero-cta-primary", "label": "Get Started", "href": "#cta" },
+    "secondaryCta": { "id": "hero-cta-secondary", "label": "View on GitHub", "href": "https://github.com/" },
     "stats": [
-      { "id": "stat-stars", "value": "60k+", "label": "Bintang GitHub" },
-      { "id": "stat-downloads", "value": "2M+", "label": "Muat turun" },
-      { "id": "stat-contributors", "value": "300+", "label": "Penyumbang" }
+      { "id": "stat-stars", "value": "60k+", "label": "GitHub stars" },
+      { "id": "stat-downloads", "value": "2M+", "label": "Downloads" },
+      { "id": "stat-contributors", "value": "300+", "label": "Contributors" }
     ]
   },
 
   "features": {
-    "heading": "Dibina untuk browsing ejen",
-    "subheading": "Segala yang anda perlukan untuk mengautomasikan web, tanpa pening kepala.",
+    "heading": "Built for agentic browsing",
+    "subheading": "Everything you need to automate the web, without the headaches.",
     "items": [
       {
         "id": "feat-fast",
         "icon": "bolt",
-        "title": "Cepat secara lalai",
-        "description": "Ekstraksi DOM dan pelaksanaan tindakan yang dioptimumkan supaya ejen bergerak pada kelajuan mesin, bukan kelajuan manusia."
+        "title": "Fast by default",
+        "description": "Optimized DOM extraction and action execution so agents move at machine speed, not human speed."
       },
       {
         "id": "feat-reliable",
         "icon": "shield-check",
-        "title": "Pengesanan elemen yang boleh dipercayai",
-        "description": "Strategi pemilih yang teguh untuk mengatasi perubahan susun atur, kandungan dinamik, dan DOM bayangan."
+        "title": "Reliable element detection",
+        "description": "Robust selector strategy that survives layout shifts, dynamic content, and shadow DOM."
       },
       {
         "id": "feat-secure",
         "icon": "lock",
-        "title": "Selamat dari reka bentuk",
-        "description": "Sesi terpencil dan kelayakan berskop memastikan tindakan ejen terasing dan boleh diaudit."
+        "title": "Secure by design",
+        "description": "Sandboxed sessions and scoped credentials keep agent actions isolated and auditable."
       },
       {
         "id": "feat-extensible",
         "icon": "puzzle",
-        "title": "API boleh dikembangkan",
-        "description": "Sambung ke mana-mana LLM atau rangka kerja ejen dengan permukaan yang kecil dan didokumentasi dengan baik."
+        "title": "Extensible API",
+        "description": "Plug into any LLM or agent framework with a small, well-documented surface area."
       },
       {
         "id": "feat-observability",
         "icon": "activity",
-        "title": "Keterlihatan penuh",
-        "description": "Jejak langkah demi langkah, tangkapan skrin, dan log untuk setiap tindakan ejen anda."
+        "title": "Full observability",
+        "description": "Step-by-step traces, screenshots, and logs for every action your agent takes."
       },
       {
         "id": "feat-opensource",
         "icon": "code",
-        "title": "Sumber terbuka",
-        "description": "Lesen MIT. Host sendiri atau gunakan awan terurus — pilihan anda, tanpa kunci masuk."
+        "title": "Open source",
+        "description": "MIT licensed. Self-host or use the managed cloud — your choice, no lock-in."
       }
     ]
   },
 
   "useCases": {
-    "heading": "Kes Penggunaan",
-    "subheading": "Apa yang pasukan bina dengannya.",
+    "heading": "Use cases",
+    "subheading": "What teams build with it.",
     "items": [
       {
         "id": "uc-research",
-        "title": "Ejen penyelidikan",
-        "description": "Rangkak, ekstrak, dan ringkaskan maklumat merentasi ribuan halaman secara automatik."
+        "title": "Research agents",
+        "description": "Crawl, extract, and summarize information across thousands of pages automatically."
       },
       {
         "id": "uc-qa",
-        "title": "QA & ujian",
-        "description": "Jalankan ejen ujian hujung-ke-hujung yang menyesuaikan diri dengan perubahan UI tanpa skrip rapuh."
+        "title": "QA & testing",
+        "description": "Run end-to-end test agents that adapt to UI changes without brittle scripts."
       },
       {
         "id": "uc-rpa",
-        "title": "Automasi aliran kerja",
-        "description": "Automasikan tugas web berulang: pengisian borang, kemasukan data, dan aliran kerja pejabat belakang."
+        "title": "Workflow automation",
+        "description": "Automate repetitive web tasks: form filling, data entry, and back-office workflows."
       },
       {
         "id": "uc-data",
-        "title": "Pengumpulan data",
-        "description": "Scraping berstruktur secara besar-besaran dengan had kadar dan logik ulang semula terbina dalam."
+        "title": "Data collection",
+        "description": "Structured scraping at scale with built-in rate limiting and retry logic."
       }
     ]
   },
 
   "pricing": {
-    "heading": "Harga ringkas",
-    "subheading": "Mulakan percuma. Skala bila anda perlukan.",
+    "heading": "Simple pricing",
+    "subheading": "Start free. Scale when you need to.",
     "plans": [
       {
         "id": "plan-free",
-        "name": "Percuma",
+        "name": "Free",
         "price": "$0",
-        "period": "/bulan",
-        "description": "Untuk individu dan projek sampingan.",
-        "features": ["1 sesi serentak", "Sokongan komuniti", "Teras sumber terbuka"],
-        "cta": { "label": "Mulakan", "href": "#cta" },
+        "period": "/month",
+        "description": "For individuals and side projects.",
+        "features": ["1 concurrent session", "Community support", "Open source core"],
+        "cta": { "label": "Get Started", "href": "#cta" },
         "highlighted": false
       },
       {
         "id": "plan-pro",
         "name": "Pro",
         "price": "$49",
-        "period": "/bulan",
-        "description": "Untuk pasukan yang menjalankan ejen dalam pengeluaran.",
-        "features": ["20 sesi serentak", "Sokongan keutamaan", "Analitik penggunaan", "Tempat duduk pasukan"],
-        "cta": { "label": "Mulakan Pro", "href": "#cta" },
+        "period": "/month",
+        "description": "For teams running agents in production.",
+        "features": ["20 concurrent sessions", "Priority support", "Usage analytics", "Team seats"],
+        "cta": { "label": "Start Pro", "href": "#cta" },
         "highlighted": true
       },
       {
         "id": "plan-enterprise",
-        "name": "Perusahaan",
-        "price": "Tersuai",
+        "name": "Enterprise",
+        "price": "Custom",
         "period": "",
-        "description": "Untuk organisasi dengan keperluan tersuai.",
-        "features": ["Sesi tanpa had", "Sokongan khusus", "SSO/SAML", "SLA tersuai"],
-        "cta": { "label": "Hubungi Jualan", "href": "#contact" },
+        "description": "For organizations with custom needs.",
+        "features": ["Unlimited sessions", "Dedicated support", "SSO/SAML", "Custom SLAs"],
+        "cta": { "label": "Contact Sales", "href": "#contact" },
         "highlighted": false
       }
     ]
   },
 
   "testimonials": {
-    "heading": "Dipercayai pembangun",
+    "heading": "Trusted by builders",
     "items": [
       {
         "id": "test-1",
-        "quote": "Mengurangkan masa penyelenggaraan scraping kami lebih daripada separuh dalam bulan pertama.",
+        "quote": "Cut our scraping maintenance time by more than half within the first month.",
         "author": "A. Rahman",
-        "role": "Ketua Kejuruteraan, Data Co"
+        "role": "Engineering Lead, Data Co"
       },
       {
         "id": "test-2",
-        "quote": "Alat keterlihatan sahaja menyelamatkan kami berhari-hari debugging ejen yang tidak stabil.",
+        "quote": "The observability tools alone saved us days of debugging flaky agents.",
         "author": "S. Tan",
-        "role": "Pengasas, AgentOps"
+        "role": "Founder, AgentOps"
       },
       {
         "id": "test-3",
-        "quote": "Bertukar dari persediaan Selenium buatan sendiri dan tidak menoleh ke belakang.",
+        "quote": "Switched from a homegrown Selenium setup and never looked back.",
         "author": "M. Lee",
-        "role": "Pembangun Kanan, ScaleWorks"
+        "role": "Senior Developer, ScaleWorks"
       }
     ]
   },
 
   "docs": {
-    "heading": "Dokumentasi",
-    "subheading": "Segala-galanya untuk bermula dengan pantas.",
+    "heading": "Documentation",
+    "subheading": "Everything to get started fast.",
     "links": [
-      { "id": "doc-quickstart", "title": "Permulaan Pantas", "description": "Pasang dan jalankan ejen pertama anda dalam 5 minit.", "href": "#" },
-      { "id": "doc-api", "title": "Rujukan API", "description": "Rujukan lengkap untuk setiap kaedah dan peristiwa.", "href": "#" },
-      { "id": "doc-guides", "title": "Panduan", "description": "Resipi untuk corak automasi biasa.", "href": "#" },
-      { "id": "doc-selfhost", "title": "Host sendiri", "description": "Gunakan di infrastruktur anda sendiri.", "href": "#" }
+      { "id": "doc-quickstart", "title": "Quickstart", "description": "Install and run your first agent in 5 minutes.", "href": "#" },
+      { "id": "doc-api", "title": "API Reference", "description": "Full reference for every method and event.", "href": "#" },
+      { "id": "doc-guides", "title": "Guides", "description": "Recipes for common automation patterns.", "href": "#" },
+      { "id": "doc-selfhost", "title": "Self-hosting", "description": "Deploy on your own infrastructure.", "href": "#" }
     ]
   },
 
   "faq": {
-    "heading": "Soalan Lazim",
+    "heading": "Frequently asked questions",
     "items": [
       {
         "id": "faq-1",
-        "question": "Adakah ia sumber terbuka?",
-        "answer": "Ya, enjin teras dilesenkan MIT dan tersedia di GitHub. Awan terurus adalah tambahan berbayar pilihan."
+        "question": "Is it open source?",
+        "answer": "Yes, the core engine is MIT licensed and available on GitHub. The managed cloud is an optional paid add-on."
       },
       {
         "id": "faq-2",
-        "question": "LLM mana yang disokong?",
-        "answer": "Mana-mana LLM yang boleh memanggil fungsi atau alat — termasuk Claude, GPT, dan model berat terbuka."
+        "question": "Which LLMs does it support?",
+        "answer": "Any LLM that can call functions or tools — including Claude, GPT, and open-weight models."
       },
       {
         "id": "faq-3",
-        "question": "Boleh saya host sendiri?",
-        "answer": "Ya. Tier Perusahaan dan Percuma kedua-duanya menyokong host sendiri di infrastruktur anda."
+        "question": "Can I self-host?",
+        "answer": "Yes. The Enterprise and Free tiers both support self-hosting on your own infrastructure."
       },
       {
         "id": "faq-4",
-        "question": "Adakah ia berfungsi dengan laman dinamik yang berat JS?",
-        "answer": "Ya. Enjin menunggu rangkaian idle dan menyelesaikan semula pemilih selepas mutasi DOM."
+        "question": "Does it work with dynamic, JS-heavy sites?",
+        "answer": "Yes. The engine waits for network idle and re-resolves selectors after DOM mutations."
       },
       {
         "id": "faq-5",
-        "question": "Adakah terdapat had kadar?",
-        "answer": "Tier Percuma mempunyai had sesi lembut. Tier Pro dan Perusahaan berskala dengan penggunaan."
+        "question": "Is there a rate limit?",
+        "answer": "Free tier has a soft session limit. Pro and Enterprise tiers scale with usage."
       }
     ]
   },
 
   "newsletter": {
-    "heading": "Ikuti perkembangan",
-    "subheading": "Kemas kini produk, nota keluaran, dan petua pembinaan ejen. Tiada spam.",
+    "heading": "Stay in the loop",
+    "subheading": "Product updates, release notes, and agent-building tips. No spam.",
     "form": {
       "id": "newsletter-form",
       "inputId": "newsletter-email",
       "inputType": "email",
-      "placeholder": "anda@contoh.com",
-      "submitLabel": "Langgan",
-      "successMessage": "Anda telah melanggan. Semak peti masuk untuk pengesahan.",
-      "errorMessage": "Sila masukkan alamat emel yang sah."
+      "placeholder": "you@example.com",
+      "submitLabel": "Subscribe",
+      "successMessage": "You're subscribed. Check your inbox to confirm.",
+      "errorMessage": "Please enter a valid email address."
     }
   },
 
   "cta": {
     "id": "final-cta",
-    "heading": "Bersedia untuk memberi ejen anda pelayar?",
-    "subheading": "Mulakan secara percuma, tanpa kad kredit diperlukan.",
-    "primaryCta": { "label": "Mulakan", "href": "#" },
-    "secondaryCta": { "label": "Bercakap dengan Jualan", "href": "#contact" }
+    "heading": "Ready to give your agent a browser?",
+    "subheading": "Get started for free, no credit card required.",
+    "primaryCta": { "label": "Get Started", "href": "#" },
+    "secondaryCta": { "label": "Talk to Sales", "href": "#contact" }
   },
 
   "footer": {
     "columns": [
       {
         "id": "footer-product",
-        "title": "Produk",
+        "title": "Product",
         "links": [
-          { "label": "Ciri-ciri", "href": "#product" },
-          { "label": "Harga", "href": "#pricing" },
-          { "label": "Log Perubahan", "href": "#" }
+          { "label": "Features", "href": "#product" },
+          { "label": "Pricing", "href": "#pricing" },
+          { "label": "Changelog", "href": "#" }
         ]
       },
       {
         "id": "footer-resources",
-        "title": "Sumber",
+        "title": "Resources",
         "links": [
-          { "label": "Dokumen", "href": "#docs" },
-          { "label": "Rujukan API", "href": "#" },
+          { "label": "Docs", "href": "#docs" },
+          { "label": "API Reference", "href": "#" },
           { "label": "GitHub", "href": "https://github.com/" }
         ]
       },
       {
         "id": "footer-company",
-        "title": "Syarikat",
+        "title": "Company",
         "links": [
-          { "label": "Tentang", "href": "#" },
+          { "label": "About", "href": "#" },
           { "label": "Blog", "href": "#" },
-          { "label": "Hubungi", "href": "#contact" }
+          { "label": "Contact", "href": "#contact" }
         ]
       },
       {
         "id": "footer-legal",
-        "title": "Undang-undang",
+        "title": "Legal",
         "links": [
-          { "label": "Dasar Privasi", "href": "#" },
-          { "label": "Terma Perkhidmatan", "href": "#" }
+          { "label": "Privacy Policy", "href": "#" },
+          { "label": "Terms of Service", "href": "#" }
         ]
       }
     ],
-    "copyright": "© 2026 Browser Use. Hak cipta terpelihara.",
+    "copyright": "© 2026 Browser Use. All rights reserved.",
     "social": [
       { "id": "social-github", "label": "GitHub", "href": "https://github.com/" },
       { "id": "social-x", "label": "X", "href": "https://x.com/" }
